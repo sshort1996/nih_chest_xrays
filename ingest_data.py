@@ -4,9 +4,6 @@ import openai
 import os
 
 
-# Create an instance of the Faker object
-fake = Faker()
-
 # Specify the path to your CSV file
 csv_file_path = "sample/sample_labels.csv"
 
