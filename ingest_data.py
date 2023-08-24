@@ -5,7 +5,7 @@ import os
 
 
 # Specify the path to your CSV file
-csv_file_path = "sample/sample_labels.csv"
+csv_file_path = "sample_labels.csv"
 
 # Read the CSV file into a pandas DataFrame
 df = pd.read_csv(csv_file_path)
