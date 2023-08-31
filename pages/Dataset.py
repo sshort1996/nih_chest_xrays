@@ -4,7 +4,6 @@ import openai
 import os
 
 
-# def show_data():
 # Specify the path to your CSV file
 csv_file_path = "sample_labels.csv"
 
@@ -46,6 +45,6 @@ for cond in selected_examples.keys():
     cols = st.columns(5)
     to_plot = selected_examples[cond]['Image Index']
     for i, path_stem in enumerate(to_plot):
-        image_path = f"sample/images/{path_stem}"
+        image_path = f"NIH_data/images/{path_stem}"
         cols[i % 5].image(image_path, caption=f"Image Index: {path_stem}", use_column_width=True)
     st.write(descriptions[cond])
