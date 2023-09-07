@@ -50,7 +50,7 @@ print(f'training_rows: {training_rows}')
 print(f'test_rows: {test_rows}')
 
 # write to training labels file
-training_labels = os.path.join("training_nih", "labels.csv")
+training_labels = os.path.join("training_niha", "labels.csv")
 test_labels = os.path.join("test_nih", "labels.csv")
 with open(training_labels, 'w', newline='') as file:
     writer = csv.writer(file)

@@ -1,7 +1,7 @@
 import sys
 sys.path.append("../")
 from MNIST import preProcessor as pp
-from MNIST import compile as cp
+from MNIST.CNN import compile as cp
 from MNIST import train as tr
 from MNIST import test as ts
 import streamlit as st

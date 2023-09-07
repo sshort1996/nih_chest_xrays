@@ -1,8 +1,10 @@
 # import evertyhing from MNIST dir
 import sys
+
+from MNIST.CNN import compile
 sys.path.append('/Users/ShaneShort/Documents/nih_chest_xrays')
 
-from MNIST import preProcessor, compile, test
+from MNIST import preProcessor, test
 
 # run preprocess to set up data 
 X_test, X_train, X_val, Y_test, Y_train, Y_val = preProcessor.pre_process()
