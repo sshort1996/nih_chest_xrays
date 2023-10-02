@@ -34,6 +34,8 @@ def train_test_split_images(root_dir: str, training_fraction: float) -> None:
     for file in test_set:
         shutil.copy2(os.path.join(source_images, file), os.path.join(root_dir, 'test_nih', 'images'))
 
+    return train_set, test_set
+
 
 def train_test_split_labels(root_dir: str, train_set: List[int], test_set: List[int]) -> None:
 
